@@ -15,9 +15,10 @@ This project was completed as part of the **Interactive Device Design** course a
 ### Key Features:  
 - **Motion Tracking:** Utilized Mediapipe to process webcam data, capturing user movements (head, shoulders, elbows, and hands) and translating them into commands for the robot.  
 - **3D Printing & Assembly:** Constructed using publicly available STL files, with design adjustments to focus on upper body mobility for head and arm movements.  
-- **Servo Motor Integration:** Implemented servo motors to enable precise, life-like articulation of the robot’s joints.  
+- **Servo Motor Integration:** Implemented servo motors with an Adafruit ServoKit for precise, life-like articulation of the robot’s joints.  
 - **Speech-to-Text Interaction:** Integrated the Vosk speech-to-text model to enable voice commands for basic interactions.  
 - **Real-Time Communication:** Deployed MQTT protocols to synchronize Mediapipe's processed data with the Raspberry Pi controlling the robot.  
+- **GPIO LED Feedback:** Utilized GPIO pins on the Raspberry Pi to manage visual feedback for operational status.
 
 ---
 
@@ -27,28 +28,39 @@ Follow these instructions to set up, assemble, and run Byte the Robot.
 ### Prerequisites  
 1. **Hardware Requirements:**  
    - Two Raspberry Pi devices (one for Mediapipe processing and the other for robot control).  
-   - Servo motors (compatible with provided STL file design).  
+   - Seven servo motors (compatible with the robot’s STL file design).  
    - Webcam for motion tracking.  
-   - MQTT communication setup.
+   - Adafruit ServoKit (16 channels at 60Hz).  
+   - GPIO-enabled LED for visual feedback.
 
 2. **Software Requirements:**  
-   - Mediapipe library installed on the Raspberry Pi handling motion detection.  
-   - Python 3.7+ installed on both Raspberry Pis.  
-   - Required libraries: `cv2`, `mediapipe`, `paho-mqtt`, and `vosk`.
+   - **Python 3.7+** installed on both Raspberry Pis.  
+   - Required Python libraries:  
+     ```bash
+     pip install adafruit-circuitpython-servokit paho-mqtt mediapipe sounddevice vosk
+     ```
+   - MQTT configuration:  
+     - Update the MQTT broker, port, username, and password in the scripts (`detect.py` and `controlRobot.py`) to match your preferred setup.  
 
 3. **3D Printing:**  
    - STL files for the robot’s body parts are available in the [Original Repository](https://github.com/Ruiznogueras05CT/Interactive-Lab-Hub/tree/Fall2023/Final%20Project).  
    - Use a 3D printer to manufacture the robot parts.  
-   - Assemble the robot following the provided design diagrams.
+   - Assemble the robot using screws and connect the servo motors as per the provided diagrams.
+
+---
 
 ### Running the Project  
 1. **Setup the Raspberry Pis:**  
-   - On one Pi, set up and run `detect.py` to process webcam data and publish motion commands to MQTT.  
-   - On the second Pi, run `controlRobot.py` to control the robot's movements by subscribing to MQTT topics.
+   - **First Pi (User Tracking):**  
+     - Connect a webcam and run `detect.py`.  
+     - Ensure this Pi processes user movements using Mediapipe and publishes motion commands to MQTT.  
+   - **Second Pi (Robot Control):**  
+     - Connect the robot’s servo motors and LED.  
+     - Run `controlRobot.py` to subscribe to MQTT topics and control the robot.
 
 2. **Power and Test:**  
    - Ensure both Pis are powered and connected via MQTT.  
-   - Position the webcam to track user movements.
+   - Position the webcam to track user movements effectively.
 
 3. **Execute the Scripts:**  
    - Run `detect.py` on the Pi connected to the webcam.  
