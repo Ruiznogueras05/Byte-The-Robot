@@ -104,6 +104,11 @@ Follow these instructions to set up, assemble, and run Byte the Robot.
 
 ---
 
+## Disclaimer  
+This repository was developed as part of an academic course at Cornell Tech and is shared for educational and demonstration purposes. It is not intended for commercial use or redistribution. Please contact me directly if you have questions or wish to use any part of this project.
+
+---
+
 ## Final Product Code
 
 The following scripts represent the final implementation of Byte the Robot:
