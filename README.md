@@ -21,6 +21,44 @@ This project was completed as part of the **Interactive Device Design** course a
 
 ---
 
+## Getting Started  
+Follow these instructions to set up, assemble, and run Byte the Robot.
+
+### Prerequisites  
+1. **Hardware Requirements:**  
+   - Two Raspberry Pi devices (one for Mediapipe processing and the other for robot control).  
+   - Servo motors (compatible with provided STL file design).  
+   - Webcam for motion tracking.  
+   - MQTT communication setup.
+
+2. **Software Requirements:**  
+   - Mediapipe library installed on the Raspberry Pi handling motion detection.  
+   - Python 3.7+ installed on both Raspberry Pis.  
+   - Required libraries: `cv2`, `mediapipe`, `paho-mqtt`, and `vosk`.
+
+3. **3D Printing:**  
+   - STL files for the robot’s body parts are available in the [Original Repository](https://github.com/Ruiznogueras05CT/Interactive-Lab-Hub/tree/Fall2023/Final%20Project).  
+   - Use a 3D printer to manufacture the robot parts.  
+   - Assemble the robot following the provided design diagrams.
+
+### Running the Project  
+1. **Setup the Raspberry Pis:**  
+   - On one Pi, set up and run `detect.py` to process webcam data and publish motion commands to MQTT.  
+   - On the second Pi, run `controlRobot.py` to control the robot's movements by subscribing to MQTT topics.
+
+2. **Power and Test:**  
+   - Ensure both Pis are powered and connected via MQTT.  
+   - Position the webcam to track user movements.
+
+3. **Execute the Scripts:**  
+   - Run `detect.py` on the Pi connected to the webcam.  
+   - Run `controlRobot.py` on the Pi managing the robot.
+
+4. **Interact and Enjoy:**  
+   - Use voice commands or gestures to interact with the robot in real-time.  
+
+---
+
 ## Development Timeline  
 - **November 14:** Project Plan Pitch.  
 - **November 21:** System design and diagram creation.  
