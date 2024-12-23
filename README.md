@@ -51,12 +51,13 @@ This project was completed as part of the **Interactive Device Design** course a
 
 ---
 
-## Media and Documentation  
-- **Video Demonstrations:**  
-  [Byte the Robot in Action](https://github.com/Ruiznogueras05CT/Interactive-Lab-Hub/tree/Fall2023/Final%20Project).  
+## Media and Documentation
 
-- **Design Process Documentation:**  
-  Includes system design, servo wiring diagrams, and 3D printing processes.
+1. **Original Repository:**  
+   Explore the original course repository for Interactive Device Design at Cornell Tech, which includes all group project files, iterations, and collaborative efforts:  
+   [Original Repository](https://github.com/Ruiznogueras05CT/Interactive-Lab-Hub/tree/Fall2023/Final%20Project)  
 
-- **Full Codebase:**  
-  Accessible [here](https://github.com/Ruiznogueras05CT/Interactive-Lab-Hub/tree/Fall2023/Final%20Project).  
+2. **Additional Media (Video):**  
+   Watch a demonstration video showcasing the functionality and features of Byte the Robot:  
+   [Byte the Robot Demo Video](https://drive.google.com/file/d/1-GGnieB91tHJyQQbQX1yrb3Hj7tQHQkH/view?usp=sharing)  
+ 
