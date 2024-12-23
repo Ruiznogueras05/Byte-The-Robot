@@ -9,6 +9,9 @@ This project was completed as part of the **Interactive Device Design** course a
 ## Project Overview  
 **Byte the Robot** is a 3D-printed humanoid robot designed to mimic human arm and head movements in real-time. This project aimed to bridge human motion capture and robotic replication by leveraging **Mediapipe**, a powerful computer vision library, in conjunction with a Raspberry Pi and MQTT communication protocols. The robot acts as an “avatar,” translating user gestures into fluid robotic movements, enabling natural and interactive experiences.
 
+![Byte the Robot](media/ByteTheRobotPic.jpg)  
+*The Byte the Robot team with the final product, showcasing its innovative design and functionality.*
+
 ### Key Features:  
 - **Motion Tracking:** Utilized Mediapipe to process webcam data, capturing user movements (head, shoulders, elbows, and hands) and translating them into commands for the robot.  
 - **3D Printing & Assembly:** Constructed using publicly available STL files, with design adjustments to focus on upper body mobility for head and arm movements.  
