@@ -51,6 +51,15 @@ This project was completed as part of the **Interactive Device Design** course a
 
 ---
 
+## Final Product Code
+
+The following scripts represent the final implementation of Byte the Robot:
+
+- **`controlRobot.py`**: Handles the robotic control systems by receiving processed motion data via MQTT and translating it into servo motor commands. This script ensures the robot mimics the user’s head and arm movements in real-time with precision.
+
+- **`detect.py`**: Processes webcam data using Mediapipe to capture user movements, including head, shoulders, elbows, and hands. The script then publishes the processed data to the MQTT server, enabling communication with the robot's control system.
+
+
 ## Media and Documentation
 
 1. **Original Repository:**  
