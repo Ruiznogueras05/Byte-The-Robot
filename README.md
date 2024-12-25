@@ -1,6 +1,8 @@
 # Byte-The-Robot
 A 3D-printed robot capable of mimicking human movements using Mediapipe and Raspberry Pi.
 
+![ByteTheRobot](media/ByteTheRobot.jpg)
+
 ## Course Context  
 This project was completed as part of the **Interactive Device Design** course at Cornell Tech during Fall 2023. The course focused on the principles of hardware-software integration, rapid prototyping, and creating functional interactive devices. Over the span of a semester, the course provided opportunities to explore emerging technologies, develop innovative solutions, and bring ideas from concept to execution.
 
