@@ -1,5 +1,5 @@
 # Byte-The-Robot
-A 3D-printed robot capable of mimicking human movements using Mediapipe and Raspberry Pi.
+Byte-The-Robot is a 3D-printed humanoid robot designed to mimic human movements in real-time, utilizing Mediapipe for motion tracking and a Raspberry Pi for computational control. With an interactive design that bridges hardware and software, Byte-The-Robot showcases advancements in robotics, computer vision, and motion imitation.
 
 ![ByteTheRobot](media/ByteTheRobot.jpg)
 
